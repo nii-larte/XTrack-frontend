@@ -47,7 +47,7 @@ const Register = () => {
 
         if (Notification.permission === "granted") {
           const fcmToken = await getToken(messaging, {
-            vapidKey: "YOUR_VAPID_KEY_HERE",
+            vapidKey: "BGGz-kkJr4z0LD9VGaX237zZeg7SwZXqv7-TRsrwG7ljQV2ax0XKd-9LvKl4ObdhqWDfiO1wBFXeSnDWwetXuG4",
           });
 
           if (fcmToken) {

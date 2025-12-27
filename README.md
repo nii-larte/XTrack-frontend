@@ -1,70 +1,176 @@
-# Getting Started with Create React App
+# XTrack - Expense Tracker Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Node.js](https://img.shields.io/badge/Node-v14+-green)
+![License](https://img.shields.io/badge/License-MIT-blue)
+![npm](https://img.shields.io/badge/npm-v6+-red)
 
-## Available Scripts
+XTrack is a modern expense tracker web application that allows users to create an account, add, edit, delete, and view expenses. This frontend is built with **React** and interacts with a **Flask** backend via **Axios**.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Features](#features)  
+- [Tech Stack](#tech-stack)  
+- [Screenshots](#screenshots)  
+- [Getting Started](#getting-started)  
+- [Prerequisites](#prerequisites)  
+- [Installation](#installation)  
+- [Environment Variables](#environment-variables)  
+- [Running Locally](#running-locally)  
+- [Running Tests](#running-tests)  
+- [Build for Production](#build-for-production)  
+- [Deployment](#deployment)  
+- [Contribution](#contribution)  
+- [License](#license)  
+- [Learn More](#learn-more)  
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- User authentication 
+- Add, edit, delete expenses
+- View expense history
+- Dashboard with multiple expense views
+- Responsive design
+- Client-side routing with React Router
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend:** React, React Router, Axios
+- **Styling:** CSS 
+- **Backend:** Flask (separate repository)
+- **State management:** Built-in React state 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Screenshots
 
-### `npm run eject`
+### Home
+![Home](screenshots/Home.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Register / Login
+![Register](screenshots/Register.png)
+![Login](screenshots/Login.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Dashboard
+![Dashboard 1](screenshots/Dashboard0.png)
+![Dashboard 2](screenshots/Dashboard1.png)
+![Dashboard 3](screenshots/Dashboard2.png)
+![Dashboard 4](screenshots/Dashboard.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Add / Edit Expense
+![Add Expense](screenshots/AddExpense.png)
+![Edit Expense](screenshots/EditExpense.png)
+![Edited list](screenshots/EditedList.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Other Views
+![Expenses List 1](screenshots/Expenses.png)
+![Expenses List 2](screenshots/Expenses0.png)
+![Expense Summary](screenshots/SummaryCards.png)
+
+### Profile / Settings
+![Profile](screenshots/Profile.png)
+![Settings](screenshots/Settings.png)
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or higher recommended)
+- npm (comes with Node.js)
+- Backend server running (Flask) [link to backend repo](git@github.com:nii-larte/XTrack-backend.git)
+
+### Installation
+
+1. Clone the repository:
+git clone git@github.com:nii-larte/XTrack-frontend.git
+cd xtrack-frontend
+npm install
+
+
+2. Create a `.env` file in the dir and add required environment variables:
+REACT_APP_API_URL=http://127.0.0.1:5000
+# add any variable as specified by [Home.js]
+
+
+## Running Locally
+
+Start the development server with:
+npm start
+
+
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the app. Make sure backend Flask server is running first.
+
+## Running Tests
+
+Run the test suite with:
+npm test
+
+
+## Build for Production
+
+Create an optimized production build with:
+npm run build
+
+This will generate the build folder ready for deployment.
+
+
+## Deployment 
+
+You can deploy your React frontend using free hosting services:
+
+- **Netlify**
+  - Connect GitHub repository and deploy automatically
+  - Supports continuous deployment and automatic HTTPS
+
+- **Vercel**
+  - Import GitHub repository
+  - Automatic React build and deployment
+  - Continuous deployment included
+
+- **GitHub Pages**
+  - Suitable for static builds
+  - Requires `HashRouter` instead of `BrowserRouter` for React Router
+  - Deploy from the `build/` directory
+
+---
+
+## Contribution
+
+Contributions are welcome! To contribute:
+
+1. Fork the repository
+
+2. Create a new branch:
+git checkout -b feature/Feature
+
+3. Make your changes in this branch
+
+4. Commit your changes:
+git commit -m "Add some feature"
+
+5. Push to the branch:
+
+git push origin feature/Feature
+
+
+6. Open a pull request
+
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [React Documentation](https://reactjs.org/)
+- [Create React App Documentation](https://facebook.github.io/create-react-app/docs/getting-started)
+- [Axios Documentation](https://axios-http.com/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
