@@ -1,0 +1,76 @@
+.ht-empty {
+  font-size: 14px;
+  color: #6b7280;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.ht-timeline {
+  margin-top: 16px;
+  position: relative;
+  padding-left: 18px;
+  border-left: 2px solid #e5e7eb;
+}
+
+.ht-item {
+  position: relative;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.ht-marker {
+  position: absolute;
+  left: -9px;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  background-color: #2563eb;
+  border-radius: 50%;
+}
+
+.ht-content {
+  background-color: #fafafa;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px;
+  width: 100%;
+}
+
+.ht-header {
+  margin-bottom: 8px;
+}
+
+.ht-field {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.ht-row {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 8px;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.ht-label {
+  font-weight: 500;
+  color: #374151;
+}
+
+.ht-val {
+  color: #111827;
+  word-break: break-word;
+}
+
+.ht-timestamp {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.ht-ts {
+  margin-left: 6px;
+}

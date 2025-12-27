@@ -1,0 +1,104 @@
+.dashboard-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.dashboard-container h2,
+.dashboard-container h3 {
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.dashboard-container button {
+  background-color: #3b82f6;
+  color: #fff;
+  border: 2px solid #d1d5db;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.dashboard-container button:hover {
+  background-color: #2563eb;
+}
+
+.dashboard-container select,
+.dashboard-container input[type="date"],
+.dashboard-container input[type="number"],
+.dashboard-container input[type="range"] {
+  padding: 6px 10px;
+  margin: 5px 5px 10px 0;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  outline: none;
+}
+
+.dashboard-container input[type="range"] {
+  width: 50%;
+}
+
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.summary-card {
+  padding: 15px;
+  border-radius: 10px;
+  background: #f3f4f6;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.dashboard-container progress {
+  width: 100%;
+  height: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.expense-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.expense-table th,
+.expense-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.expense-table th {
+  background-color: #e5e7eb;
+}
+
+.expense-table tbody tr:nth-child(odd) {
+  background-color: #f9fafb;
+}
+
+.chart-container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.chart-container canvas {
+  width: 100% !important;
+  height: 400px !important;
+}
+
+.trend-chart-container canvas {
+  height: 300px !important;
+}
+
+@media (max-width: 600px) {
+  .summary-cards {
+    grid-template-columns: 1fr;
+  }
+}

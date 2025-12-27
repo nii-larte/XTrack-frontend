@@ -1,0 +1,65 @@
+.add-expense-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.add-expense-container h2 {
+  margin-bottom: 15px;
+}
+
+.add-expense-container p {
+  color: green;
+  margin-bottom: 15px;
+}
+
+.add-expense-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-expense-form input,
+.add-expense-form select,
+.add-expense-form textarea {
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.add-expense-form textarea {
+  resize: vertical;
+}
+
+.add-expense-form label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+.add-expense-form label input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.add-expense-form button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.add-expense-form button:hover {
+  background-color: #0056b3;
+}
